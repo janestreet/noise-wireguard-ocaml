@@ -1,0 +1,6 @@
+(library
+ (name cookies)
+ (libraries core crypto tai64n noise cstruct messages)
+ (inline_tests)
+ (preprocess
+  (pps ppx_cstruct ppx_inline_test ppx_deriving ppx_jane)))

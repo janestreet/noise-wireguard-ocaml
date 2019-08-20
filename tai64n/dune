@@ -1,0 +1,6 @@
+(library
+ (name tai64n)
+ (libraries core stdint)
+ (inline_tests)
+ (preprocess
+  (pps ppx_inline_test ppx_jane)))

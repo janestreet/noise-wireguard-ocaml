@@ -1,0 +1,9 @@
+(library
+ (name crypto)
+ (libraries core ctypes stdint hex digestif.c)
+ (c_names nacl_stubs)
+ (c_library_flags -lsodium -lb2)
+ (c_flags -std=c99 -Werror -Wall -g)
+ (inline_tests)
+ (preprocess
+  (pps ppx_inline_test ppx_deriving ppx_jane)))
