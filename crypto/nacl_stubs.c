@@ -25,7 +25,6 @@ CAMLprim value caml_sodium_init(value __unused v_unit) {
 }
 
 void caml_crypto_gen_key(value key_buf, value key_len) {
-  CAMLparam2 (key_buf, key_len);
   randombytes_buf(Bytes_val(key_buf), Int_val(key_len));
 }
 
